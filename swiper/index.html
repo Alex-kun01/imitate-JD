@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+    <div class="wrapper"></div>
+    <div class="deom"></div>
+
+
+    <script src="./src/jquery-3.3.1.js"></script>
+    <script src="./src/index.js"></script>
+    <script>
+        //封装轮播图插件
+        $('.wrapper').swiper({
+            //轮播图的动画类型
+            animateType:'animate',
+            //轮播图片的宽度
+            imgWidth:500,
+            //轮播图片的高度
+            imgHeight:400,
+            //是否展示左右按钮 true 展示 false 不展示
+            showChangeBtn:true,
+            //轮播的图片地址集合，数组展示
+            imgList:[
+                "https://img14.360buyimg.com/pop/s590x470_jfs/t1/48368/1/13161/86490/5da03852E72de3efc/25e44bea52abff3b.jpg.webp",
+                "https://img10.360buyimg.com/pop/s590x470_jfs/t1/73861/8/7311/133024/5d562902E29c956c1/da390c8c345c48e0.jpg.webp",
+                "https://imgcps.jd.com/ling/8764567/5riF5rSB6ZKc5oOg/5aW954mp5LiT5LqrOS45/p-5bd8253082acdd181d02fa33/3890cac3.jpg",
+                "https://img12.360buyimg.com/babel/s590x470_jfs/t1/60644/24/12531/101476/5d9e920aE25513460/dac2f702edbd1048.jpg.webp"
+            ],
+            //轮播一张的时间 s
+            autoChangeTime:3000,
+            //是否展示小圆点
+            showSpotBtn:true,
+            //是否自动轮播
+            isAuto:true,
+        })
+        $('.deom').swiper({
+            //轮播图的动画类型
+            animateType:'fade',
+            //轮播图片的宽度
+            imgWidth:300,
+            //轮播图片的高度
+            imgHeight:200,
+            //是否展示左右按钮 true 展示 false 不展示
+            showChangeBtn:true,
+            //轮播的图片地址集合，数组展示
+            imgList:[
+                "https://img14.360buyimg.com/pop/s590x470_jfs/t1/48368/1/13161/86490/5da03852E72de3efc/25e44bea52abff3b.jpg.webp",
+                "https://img10.360buyimg.com/pop/s590x470_jfs/t1/73861/8/7311/133024/5d562902E29c956c1/da390c8c345c48e0.jpg.webp",
+                "https://imgcps.jd.com/ling/8764567/5riF5rSB6ZKc5oOg/5aW954mp5LiT5LqrOS45/p-5bd8253082acdd181d02fa33/3890cac3.jpg",
+                "https://img12.360buyimg.com/babel/s590x470_jfs/t1/60644/24/12531/101476/5d9e920aE25513460/dac2f702edbd1048.jpg.webp"
+            ],
+            //轮播一张的时间 s
+            autoChangeTime:3000,
+            //是否展示小圆点
+            showSpotBtn:true,
+            //是否自动轮播
+            isAuto:true,
+        })
+    </script>
+</body>
+</html>
